@@ -76,15 +76,15 @@ Public Class Clinicians
     'Return clinician profile based on the active or inactive status
     Public Overloads Function GetClinicianInfo(ByVal status As String) As DataSet
 
-        Dim query As String
+        Dim query1 As String
 
         Select Case status
             Case True
-                query = "SELECT * FROM Clinician Where Inactive='False' ORDER BY Clinician Order ASC"
+                query1 = "SELECT * FROM Clinician Where Inactive='False' ORDER BY Clinician Order ASC"
 
 
             Case False
-                query = "SELECT * FROM Clinician ORDER BY Clinician Order ASC"
+                query1 = "SELECT * FROM Clinician ORDER BY Clinician Order ASC"
 
             Case Else
                 Return Nothing
