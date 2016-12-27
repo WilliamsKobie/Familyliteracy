@@ -136,7 +136,4 @@
   <data name="arrow-resize-135-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\arrow-resize-135-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sum" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\sum.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

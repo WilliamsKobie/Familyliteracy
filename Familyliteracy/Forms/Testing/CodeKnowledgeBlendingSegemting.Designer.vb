@@ -482,7 +482,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox3.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox3.Location = New System.Drawing.Point(6, 24)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(26, 23)
@@ -513,7 +513,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox5.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox5.Location = New System.Drawing.Point(11, 19)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(26, 23)
@@ -544,7 +544,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox2.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox2.Location = New System.Drawing.Point(6, 71)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(26, 23)
@@ -573,7 +573,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox1.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox1.Location = New System.Drawing.Point(6, 20)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(26, 23)
@@ -602,7 +602,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox4.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox4.Location = New System.Drawing.Point(6, 26)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(26, 23)
@@ -1944,7 +1944,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox16
         '
         Me.PictureBox16.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox16.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox16.Location = New System.Drawing.Point(66, 128)
         Me.PictureBox16.Name = "PictureBox16"
         Me.PictureBox16.Size = New System.Drawing.Size(26, 23)
@@ -2060,7 +2060,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox15
         '
         Me.PictureBox15.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox15.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox15.Location = New System.Drawing.Point(48, 128)
         Me.PictureBox15.Name = "PictureBox15"
         Me.PictureBox15.Size = New System.Drawing.Size(26, 23)
@@ -2194,7 +2194,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox14
         '
         Me.PictureBox14.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox14.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox14.Location = New System.Drawing.Point(56, 225)
         Me.PictureBox14.Name = "PictureBox14"
         Me.PictureBox14.Size = New System.Drawing.Size(26, 23)
@@ -2338,7 +2338,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox12
         '
         Me.PictureBox12.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox12.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox12.Location = New System.Drawing.Point(24, 218)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(26, 23)
@@ -2492,7 +2492,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox13
         '
         Me.PictureBox13.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox13.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox13.Location = New System.Drawing.Point(76, 228)
         Me.PictureBox13.Name = "PictureBox13"
         Me.PictureBox13.Size = New System.Drawing.Size(26, 23)
@@ -2646,7 +2646,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox11
         '
         Me.PictureBox11.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox11.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox11.Location = New System.Drawing.Point(15, 217)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(26, 23)
@@ -2800,7 +2800,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox10
         '
         Me.PictureBox10.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox10.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox10.Location = New System.Drawing.Point(19, 218)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(22, 23)
@@ -2997,7 +2997,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox6.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox6.Location = New System.Drawing.Point(67, 253)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(26, 23)
@@ -3179,7 +3179,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox8.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox8.Location = New System.Drawing.Point(79, 257)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(26, 23)
@@ -3289,7 +3289,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox7
         '
         Me.PictureBox7.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox7.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox7.Location = New System.Drawing.Point(60, 373)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(26, 23)
@@ -3514,7 +3514,7 @@ Partial Class CodeKnowledgeBlendingSegemting
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PictureBox9.Image = Global.Familyliteracy.My.Resources.Resources.sum
+
         Me.PictureBox9.Location = New System.Drawing.Point(89, 223)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(26, 23)
