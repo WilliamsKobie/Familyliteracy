@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3FCA1A5-B538-4651-BEF0-7F2AB9C92B3C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Familyliteracy.My.MyApplication</StartupObject>
+    <RootNamespace>Familyliteracy</RootNamespace>
+    <AssemblyName>Familyliteracy</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>0d4413b9</NuGetPackageImportStamp>
+    <PublishUrl>ftp://familyliteracy.net/publish/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://familyliteracy.net/publish/</UpdateUrl>
+    <SupportUrl>http://www.cobysolutions.com</SupportUrl>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>Scheduler 2012</ProductName>
+    <PublisherName>Cobysolutions</PublisherName>
+    <MinimumRequiredVersion>2.0.0.5</MinimumRequiredVersion>
+    <WebPage>publish.htm</WebPage>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>67</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Familyliteracy.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>false</Optimize>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>Full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Familyliteracy.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8183818D1C1F486D4A2A36D07056A6026293BBB3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Familyliteracy_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Familyliteracy_1_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sunbird.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.DataVisualization.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.11.0.2\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks.Printing" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks.Printing.Compatibility" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Reports\TestingData\SingleStudentCBMTest.Designer.vb">
+      <DependentUpon>SingleStudentCBMTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TestingData\SingleStudentCBMTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\DataTransferAppointmentKey.Designer.vb">
+      <DependentUpon>DataTransferAppointmentKey.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DataTransferAppointmentKey.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Forms\DatabaseConnectionSettings.Designer.vb">
+      <DependentUpon>DatabaseConnectionSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DatabaseConnectionSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExcelExportAppointments\IExcelAppointmentExporter.vb" />
+    <Compile Include="Forms\ExcelExportAppointments\StudentAppointmentExporter.vb" />
+    <Compile Include="Forms\ExcelExportAppointments\StudentAppointmentRequestExporter.vb" />
+    <Compile Include="Forms\ExcelExportAppointments\StudentAppointmentSummation.vb" />
+    <Compile Include="Reports\ReportsMenu.Designer.vb">
+      <DependentUpon>ReportsMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportsMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ProfileData\ClientEmailPhoneNumbers.Designer.vb">
+      <DependentUpon>ClientEmailPhoneNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProfileData\ClientEmailPhoneNumbers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SchedulingData\HourlyAppointmentCountReport.Designer.vb">
+      <DependentUpon>HourlyAppointmentCountReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SchedulingData\HourlyAppointmentCountReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SchedulingData\ReportAppointRequestDetails.Designer.vb">
+      <DependentUpon>ReportAppointRequestDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SchedulingData\ReportAppointRequestDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IUpdateUserAttributes.vb" />
+    <Compile Include="Reports\SchedulingData\StudentAppointments.Designer.vb">
+      <DependentUpon>StudentAppointments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SchedulingData\StudentAppointments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\TestingData\ReportTwoDaySegmenting.Designer.vb">
+      <DependentUpon>ReportTwoDaySegmenting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TestingData\ReportTwoDaySegmenting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Testing\CodeKnowledgeBlendingSegemting.Designer.vb">
+      <DependentUpon>CodeKnowledgeBlendingSegemting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Testing\CodeKnowledgeBlendingSegemting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Testing\RepeatedTesting.Designer.vb">
+      <DependentUpon>RepeatedTesting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Testing\RepeatedTesting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Testing\SaveValues.Designer.vb">
+      <DependentUpon>SaveValues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Testing\SaveValues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Testing\TestingAssessments.Designer.vb">
+      <DependentUpon>TestingAssessments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Testing\TestingAssessments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClinicianCalendar.Designer.vb">
+      <DependentUpon>ClinicianCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClinicianCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SchedulingData\ExportSchedule.Designer.vb">
+      <DependentUpon>ExportSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SchedulingData\ExportSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IScheduledHour.vb" />
+    <Compile Include="Forms\NewGuradian.Designer.vb">
+      <DependentUpon>NewGuradian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewGuradian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClinicianOff.Designer.vb">
+      <DependentUpon>ClinicianOff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClinicianOff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClinicianConsole.Designer.vb">
+      <DependentUpon>ClinicianConsole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClinicianConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditStudentProfile.Designer.vb">
+      <DependentUpon>EditStudentProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditStudentProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeDisplay.Designer.vb">
+      <DependentUpon>HomeDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditClinicianProfile.Designer.vb">
+      <DependentUpon>EditClinicianProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditClinicianProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditGuardianProfile.Designer.vb">
+      <DependentUpon>EditGuardianProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditGuardianProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Intro.Designer.vb">
+      <DependentUpon>Intro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Intro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\NewClinician.Designer.vb">
+      <DependentUpon>NewClinician.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewClinician.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewStudent.Designer.vb">
+      <DependentUpon>NewStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OfficeSchedulePrintOut.Designer.vb">
+      <DependentUpon>OfficeSchedulePrintOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OfficeSchedulePrintOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RescheduleDailyDisplay.designer.vb">
+      <DependentUpon>RescheduleDailyDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RescheduleDailyDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SchedulingConsole.Designer.vb">
+      <DependentUpon>SchedulingConsole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SchedulingConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignIn.Designer.vb">
+      <DependentUpon>SignIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StudentCalendar.Designer.vb">
+      <DependentUpon>StudentCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StudentManager.Designer.vb">
+      <DependentUpon>StudentManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Testing\ViewCodeKnowledgeBlendingSegmenting.Designer.vb">
+      <DependentUpon>ViewCodeKnowledgeBlendingSegmenting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Testing\ViewCodeKnowledgeBlendingSegmenting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSets\_FamilyLiteracy_mdfDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FamilyLiteracy_mdfDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\_FamilyLiteracy_mdfDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FamilyLiteracy_mdfDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\_FamilyLiteracy_mdfDataSet1.vb">
+      <DependentUpon>_FamilyLiteracy_mdfDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\_FamilyLiteracy_mdfDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FamilyLiteracy_mdfDataSet3.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\TestingData\SingleStudentCBMTest.resx">
+      <DependentUpon>SingleStudentCBMTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TestingData\SingleStudentCBMTest.rdlc" />
+    <EmbeddedResource Include="Utilities\DataTransferAppointmentKey.resx">
+      <DependentUpon>DataTransferAppointmentKey.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DatabaseConnectionSettings.resx">
+      <DependentUpon>DatabaseConnectionSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProfileData\EmailWithPhoneNumbers.rdlc" />
+    <EmbeddedResource Include="Reports\ReportsMenu.resx">
+      <DependentUpon>ReportsMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProfileData\ClientEmailPhoneNumbers.resx">
+      <DependentUpon>ClientEmailPhoneNumbers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SchedulingData\HourlyAppointmentCountReport.resx">
+      <DependentUpon>HourlyAppointmentCountReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SchedulingData\ReportAppointRequestDetails.resx">
+      <DependentUpon>ReportAppointRequestDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SchedulingData\AppointmentRequestDetailListing.rdlc" />
+    <EmbeddedResource Include="Reports\SchedulingData\HourlyAppointmentCount.rdlc" />
+    <EmbeddedResource Include="Reports\SchedulingData\StudentAppointments.rdlc" />
+    <EmbeddedResource Include="Reports\SchedulingData\StudentAppointments.resx">
+      <DependentUpon>StudentAppointments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TestingData\TwoDaySegmentingData.rdlc" />
+    <EmbeddedResource Include="Reports\TestingData\ReportTwoDaySegmenting.resx">
+      <DependentUpon>ReportTwoDaySegmenting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Testing\CodeKnowledgeBlendingSegemting.resx">
+      <DependentUpon>CodeKnowledgeBlendingSegemting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Testing\RepeatedTesting.resx">
+      <DependentUpon>RepeatedTesting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Testing\SaveValues.resx">
+      <DependentUpon>SaveValues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Testing\TestingAssessments.resx">
+      <DependentUpon>TestingAssessments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClinicianCalendar.resx">
+      <DependentUpon>ClinicianCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SchedulingData\ExportSchedule.resx">
+      <DependentUpon>ExportSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewGuradian.resx">
+      <DependentUpon>NewGuradian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClinicianOff.resx">
+      <DependentUpon>ClinicianOff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClinicianConsole.resx">
+      <DependentUpon>ClinicianConsole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditStudentProfile.resx">
+      <DependentUpon>EditStudentProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeDisplay.resx">
+      <DependentUpon>HomeDisplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditClinicianProfile.resx">
+      <DependentUpon>EditClinicianProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditGuardianProfile.resx">
+      <DependentUpon>EditGuardianProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Intro.resx">
+      <DependentUpon>Intro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewClinician.resx">
+      <DependentUpon>NewClinician.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewStudent.resx">
+      <DependentUpon>NewStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OfficeSchedulePrintOut.resx">
+      <DependentUpon>OfficeSchedulePrintOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RescheduleDailyDisplay.resx">
+      <DependentUpon>RescheduleDailyDisplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SchedulingConsole.resx">
+      <DependentUpon>SchedulingConsole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignIn.resx">
+      <DependentUpon>SignIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StudentCalendar.resx">
+      <DependentUpon>StudentCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StudentManager.resx">
+      <DependentUpon>StudentManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Testing\ViewCodeKnowledgeBlendingSegmenting.resx">
+      <DependentUpon>ViewCodeKnowledgeBlendingSegmenting.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Familyliteracy_1_TemporaryKey.pfx" />
+    <None Include="Images\icon-calendar_45h.jpg" />
+    <None Include="Images\Schedule.jpg" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\BAL.ReschedulingDisplay.datasource" />
+    <None Include="My Project\DataSources\BAL.ScheduleConfig.datasource" />
+    <None Include="My Project\DataSources\CachedCrystalReport1.datasource" />
+    <None Include="My Project\DataSources\CalenderReport.datasource" />
+    <None Include="My Project\DataSources\CrystalReport1.datasource" />
+    <None Include="My Project\DataSources\DailySchedule.datasource" />
+    <None Include="My Project\DataSources\DAL.CBMDataCollection.datasource" />
+    <None Include="My Project\DataSources\DAL.DAL.Appointments.AppointmentRequestReport.datasource" />
+    <None Include="My Project\DataSources\DAL.FAMILYLITERACYEntities.datasource" />
+    <None Include="My Project\DataSources\DAL.IAppointmentDetailsReport.datasource" />
+    <None Include="My Project\DataSources\DAL.PersonalContactCollection.datasource" />
+    <None Include="My Project\DataSources\DAL.ReadingSource.datasource" />
+    <None Include="My Project\DataSources\DAL.ScheduleRequestDetailCollection.datasource" />
+    <None Include="My Project\DataSources\DAL.SegmentingDataAttributes.datasource" />
+    <None Include="My Project\DataSources\DAL.StudentSchedule.datasource" />
+    <None Include="My Project\DataSources\Familyliteracy.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\Familyliteracy.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\ReportViewer.datasource" />
+    <None Include="My Project\DataSources\StudentAppointmentCount.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="scheduler.snk" />
+    <None Include="DataSets\_FamilyLiteracy_mdfDataSet.xsc">
+      <DependentUpon>_FamilyLiteracy_mdfDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\_FamilyLiteracy_mdfDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FamilyLiteracy_mdfDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\_FamilyLiteracy_mdfDataSet.xss">
+      <DependentUpon>_FamilyLiteracy_mdfDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\_FamilyLiteracy_mdfDataSet1.xsc">
+      <DependentUpon>_FamilyLiteracy_mdfDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\_FamilyLiteracy_mdfDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FamilyLiteracy_mdfDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\_FamilyLiteracy_mdfDataSet1.xss">
+      <DependentUpon>_FamilyLiteracy_mdfDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\_FamilyLiteracy_mdfDataSet3.xsc">
+      <DependentUpon>_FamilyLiteracy_mdfDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\_FamilyLiteracy_mdfDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FamilyLiteracy_mdfDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\_FamilyLiteracy_mdfDataSet3.xss">
+      <DependentUpon>_FamilyLiteracy_mdfDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.vbproj">
+      <Project>{96E03ED8-A177-40A0-9536-F73E8F596912}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.vbproj">
+      <Project>{B807573C-8886-41D1-8A1E-C8992B4D758A}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\sunbird.ico" />
+    <Content Include="sunbird.ico" />
+    <None Include="Images\User Edit.jpg" />
+    <None Include="Images\arrow-resize-135-icon.png" />
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\msvcr100.dll">
+      <Link>SqlServerTypes\x64\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x64\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\msvcr100.dll">
+      <Link>SqlServerTypes\x86\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x86\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\clinician.jpg" />
+    <Content Include="Images\Delete.jpg" />
+    <Content Include="License-LGPL.txt" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Testing\Export\" />
+    <Folder Include="Forms\Testing\Import\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualBasic.PowerPacks.Vs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\Accord.3.0.2\build\Accord.targets" Condition="Exists('..\packages\Accord.3.0.2\build\Accord.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Accord.3.0.2\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Accord.3.0.2\build\Accord.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

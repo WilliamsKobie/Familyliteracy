@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{B807573C-8886-41D1-8A1E-C8992B4D758A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.4\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvancedPhonic.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Assessment.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BeginningPhonic.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Blending_2snd_Words.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Blending_3snd_Words.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Blending_4snd_Words.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Blending_5snd_Words.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Blending_Summation.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CBMData.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classroom.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clinician.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clinician_DailyOutSchedule.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodeKnowledgeBlendingSegmenting\Export\TestData.vb" />
+    <Compile Include="CodeKnowledgeBlendingSegmenting\Export\TestData_DateHeader.vb" />
+    <Compile Include="CodeKnowledgeBlendingSegmenting\ISegmentingDataLocator.vb" />
+    <Compile Include="CodeKnowledgeBlendingSegmenting\TwoDateSegmenting.vb" />
+    <Compile Include="CodeKnowledge_Summations.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConsonantDigraph.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultScheduleFileLocation.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyLiteracyEntityDataModel.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FamilyLiteracyEntityDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyLiteracyEntityDataModel.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FamilyLiteracyEntityDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyLiteracyEntityDataModel.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewColumnSizeAdjustment.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GuardianProfile.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ILinkUsersTogether.vb" />
+    <Compile Include="INameConversion.vb" />
+    <Compile Include="Language.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Language_Tests.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="List.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MainSchedule.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Memory.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Memory_Tests.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Phonological_Awareness.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Phonological_Awareness_Tests.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rapid_Naming.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rapid_Naming_Tests.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReadingSource.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSelectionMenu.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ExcelAppointmentsCache.vb" />
+    <Compile Include="Reports\IAppointmentDetailsReport.vb" />
+    <Compile Include="Reports\AppointmentRequestReport.vb" />
+    <Compile Include="Reports\IMainSchedule.vb" />
+    <Compile Include="Reports\IReportsMenuSignatures.vb" />
+    <Compile Include="Reports\MainSchedule.vb" />
+    <Compile Include="Reports\ReportScheduleSignature.vb" />
+    <Compile Include="Reports\ReportTestSignature.vb" />
+    <Compile Include="Reports\ScheduleRequestDetailCollection.vb" />
+    <Compile Include="SearchUserAttributes\EmailCollection.vb" />
+    <Compile Include="SearchUserAttributes\EntireUserProfile\IEntireStudentProfileSearch.vb" />
+    <Compile Include="SearchUserAttributes\ISearchUserAddress.vb" />
+    <Compile Include="SearchUserAttributes\MailingAddressCollection.vb" />
+    <Compile Include="SearchUserAttributes\UserProfileCollection.vb" />
+    <Compile Include="SearchUserAttributes\EntireUserProfile\IGuardianEntireProfileSearch.vb" />
+    <Compile Include="SearchUserAttributes\ISearchUserAlternateEmail.vb.vb" />
+    <Compile Include="SearchUserAttributes\ISearchUserEmail.vb" />
+    <Compile Include="SearchUserAttributes\EntireUserProfile\IEntireUserProfileSearch.vb" />
+    <Compile Include="SearchUserAttributes\UserNameCollection.vb" />
+    <Compile Include="SearchUserAttributes\ISearchUserFaxPhone.vb" />
+    <Compile Include="SearchUserAttributes\ISearchUserWorkPhone.vb" />
+    <Compile Include="SearchUserAttributes\PhoneNumberCollection.vb" />
+    <Compile Include="SearchUserAttributes\ISearchUserCellPhone.vb" />
+    <Compile Include="SearchUserAttributes\ISearchUserFirstName.vb" />
+    <Compile Include="SearchUserAttributes\ISearchUserLastName.vb" />
+    <Compile Include="SearchUserAttributes\ISearchUserHomePhone.vb" />
+    <Compile Include="Segmenting_Summation.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Segment_2snd_NonWords.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Segment_2snd_Words.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Segment_3snd_NonWords.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Segment_3snd_Words.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Segment_4snd_NonWords.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Segment_4snd_Words.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Segment_5snd_Words.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Spelling.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Spelling_Tests.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StandardScore_ReferenceTable.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentCurrentReadingLevel.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentHour.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInfo.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentNote.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentProfile.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentSchedule\CampusObject.vb" />
+    <Compile Include="StudentSchedule\IScheduleConsoleDisplay.vb" />
+    <Compile Include="StudentSchedule\ScheduleConsoleDisplay.vb" />
+    <Compile Include="StudentSchool.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stud_Guard_Rel.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestingMeasurements\Assessments\AssesmentData\AssessmentDataObject.vb" />
+    <Compile Include="TestingMeasurements\Assessments\AssesmentData\ExportAssessmentData\FullAssessmentDataExport.vb" />
+    <Compile Include="TestingMeasurements\Assessments\AssesmentData\ExportAssessmentData\IassessmentData.vb" />
+    <Compile Include="TestingMeasurements\Assessments\AssesmentData\ExportAssessmentData\ExportAssesmentData.vb" />
+    <Compile Include="TestingMeasurements\Assessments\AssesmentData\ExportAssessmentData\ExportAssessmentDataObject.vb" />
+    <Compile Include="TestingMeasurements\Assessments\AssesmentData\ExportAssessmentData\StudentAssessmentData.vb" />
+    <Compile Include="TestingMeasurements\Assessments\AssessmentObject.vb" />
+    <Compile Include="TestingMeasurements\Assessments\CodeBlendingSegmenting\RemoveCodeKnowledge.vb" />
+    <Compile Include="TestingMeasurements\Assessments\DeleteAssesmentRecord.vb" />
+    <Compile Include="TestingMeasurements\Assessments\GroupSelector.vb" />
+    <Compile Include="TestingMeasurements\Assessments\Igroup.vb" />
+    <Compile Include="TestingMeasurements\Assessments\Language.vb" />
+    <Compile Include="TestingMeasurements\Assessments\AssesmentData\StudentAssessmentData.vb" />
+    <Compile Include="TestingMeasurements\Assessments\Phonological_Awareness.vb" />
+    <Compile Include="TestingMeasurements\Assessments\Rapid_Naming.vb" />
+    <Compile Include="TestingMeasurements\Assessments\Spelling.vb" />
+    <Compile Include="TestingMeasurements\Assessments\Text_Reading.vb" />
+    <Compile Include="TestingMeasurements\Assessments\Word_Reading.vb" />
+    <Compile Include="TestingMeasurements\CBM\ExportTestData\IcbmDataExporter.vb" />
+    <Compile Include="TestingMeasurements\CBM\TestingMethods\FormPassages.vb" />
+    <Compile Include="TestingMeasurements\CBM\TestingMethods\ICBMCatagories.vb" />
+    <Compile Include="TestingMeasurements\CBM\TestingMethods\SourceListing.vb" />
+    <Compile Include="TestingMeasurements\CBM\DisplayCBMData.vb" />
+    <Compile Include="TestingMeasurements\CBM\StudentMeasurements\IreturnStudentCBMInfo.vb" />
+    <Compile Include="TestingMeasurements\CBM\StudentMeasurements\IsaveNewCBMRecord.vb" />
+    <Compile Include="TestingMeasurements\CBM\CreateTestingMethod\NewSource.vb" />
+    <Compile Include="Clinicians.vb" />
+    <Compile Include="Guardian.vb" />
+    <Compile Include="IpopulateUserAttributes.vb" />
+    <Compile Include="IreturnUserProfileAttributes.vb" />
+    <Compile Include="IUpdateUserAttributes.vb" />
+    <Compile Include="IUserProfile.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RecordedHours\AddNewStudentHour.vb" />
+    <Compile Include="RecordedHours\EditNewStudentHour.vb" />
+    <Compile Include="RecordedHours\IProcessHour.vb" />
+    <Compile Include="RecordedHours\LookupStudent.vb" />
+    <Compile Include="RecordedHours\SaveHour.vb" />
+    <Compile Include="StudentSchedule\Schedule.vb" />
+    <Compile Include="Student.vb" />
+    <Compile Include="TestingMeasurements\Assessments\Memory.vb" />
+    <Compile Include="Text.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Text_Reading.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Text_Reading_Tests.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfileData\ExportStudentData\AttributeListing.vb" />
+    <Compile Include="UserProfileData\UserPhoneEmailList.vb" />
+    <Compile Include="VowelDigraph.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Word_Reading.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Word_Reading_Tests.vb">
+      <DependentUpon>FamilyLiteracyEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="_FamilyLiteracy_mdfDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FamilyLiteracy_mdfDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <EntityDeploy Include="FamilyLiteracyEntityDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FamilyLiteracyEntityDataModel.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="FamilyLiteracyEntityDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FamilyLiteracyEntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>FamilyLiteracyEntityDataModel.Context.vb</LastGenOutput>
+    </None>
+    <None Include="FamilyLiteracyEntityDataModel.edmx.diagram">
+      <DependentUpon>FamilyLiteracyEntityDataModel.edmx</DependentUpon>
+    </None>
+    <None Include="FamilyLiteracyEntityDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FamilyLiteracyEntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>FamilyLiteracyEntityDataModel.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="_FamilyLiteracy_mdfDataSet.xsc">
+      <DependentUpon>_FamilyLiteracy_mdfDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_FamilyLiteracy_mdfDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FamilyLiteracy_mdfDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_FamilyLiteracy_mdfDataSet.xss">
+      <DependentUpon>_FamilyLiteracy_mdfDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FamilyLiteracyEntityDataModel.edmx.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="89218696b0584ae98f3aca56cc35b567" Name="Diagram1" ZoomLevel="73">
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.AdvancedPhonic" Width="1.5" PointX="7.5" PointY="1.875" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Assessment" Width="1.5" PointX="11.75" PointY="12.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.BeginningPhonic" Width="1.5" PointX="0.75" PointY="1.125" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Blending_2snd_Words" Width="1.5" PointX="0.75" PointY="13.375" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Blending_3snd_Words" Width="1.5" PointX="3" PointY="13" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Blending_4snd_Words" Width="1.5" PointX="5.25" PointY="13.25" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Blending_5snd_Words" Width="1.5" PointX="7.5" PointY="13.25" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Blending_Summation" Width="1.5" PointX="9.75" PointY="13.5" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.CBMData" Width="1.5" PointX="13.75" PointY="12.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Classroom" Width="1.5" PointX="15.75" PointY="12.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Clinician" Width="1.5" PointX="15.75" PointY="15.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Clinician_DailyOutSchedule" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.CodeKnowledge_Summations" Width="1.5" PointX="9.75" PointY="2.25" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.ConsonantDigraph" Width="1.5" PointX="3" PointY="3.125" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.DefaultScheduleFileLocation" Width="1.5" PointX="16.75" PointY="3.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.GridViewColumnSizeAdjustment" Width="1.5" PointX="11.75" PointY="16.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.GuardianProfile" Width="1.5" PointX="0.75" PointY="17.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Language" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Language_Tests" Width="1.5" PointX="2.75" PointY="17.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.List" Width="1.5" PointX="14" PointY="1.125" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.MainSchedule" Width="1.5" PointX="4.75" PointY="17.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Memory" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Memory_Tests" Width="1.5" PointX="6.75" PointY="17.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Phonological_Awareness" Width="1.5" PointX="8.75" PointY="17.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Phonological_Awareness_Tests" Width="1.5" PointX="17.75" PointY="12.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Rapid_Naming" Width="1.5" PointX="17.75" PointY="15.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Rapid_Naming_Tests" Width="1.5" PointX="17.75" PointY="17.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.ReadingSource" Width="1.5" PointX="11.75" PointY="2.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Segment_2snd_NonWords" Width="1.5" PointX="11.75" PointY="8.125" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Segment_2snd_Words" Width="1.5" PointX="2.75" PointY="8.25" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Segment_3snd_NonWords" Width="1.5" PointX="14" PointY="8.375" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Segment_3snd_Words" Width="1.5" PointX="5" PointY="8.125" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Segment_4snd_NonWords" Width="1.5" PointX="16.25" PointY="8.375" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Segment_4snd_Words" Width="1.5" PointX="7.25" PointY="8.125" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Segment_5snd_Words" Width="1.5" PointX="9.5" PointY="8.125" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Segmenting_Summation" Width="1.5" PointX="18.5" PointY="8" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Spelling" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Spelling_Tests" Width="1.5" PointX="18.75" PointY="2.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.StandardScore_ReferenceTable" Width="1.5" PointX="8.75" PointY="19.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Stud_Guard_Rel" Width="1.5" PointX="10.75" PointY="19.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.StudentCurrentReadingLevel" Width="1.5" PointX="19.75" PointY="12.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.StudentHour" Width="1.5" PointX="12.75" PointY="19.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.StudentInfo" Width="1.5" PointX="19.75" PointY="15.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.StudentNote" Width="1.5" PointX="20.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.StudentProfile" Width="1.5" PointX="20.75" PointY="3.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.StudentSchool" Width="1.5" PointX="20.75" PointY="8.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.sysdiagram" Width="1.5" PointX="14.75" PointY="20.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Text" Width="1.5" PointX="14" PointY="4" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Text_Reading" Width="1.5" PointX="16.75" PointY="20.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Text_Reading_Tests" Width="1.5" PointX="18.75" PointY="20.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.VowelDigraph" Width="1.5" PointX="5.25" PointY="2.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Word_Reading" Width="1.5" PointX="20.75" PointY="20.75" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.Word_Reading_Tests" Width="1.5" PointX="21.75" PointY="11.75" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_AdvancedPhonics_VowelDigraphs1" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_CodeKnowledge_Summations_AdvancedPhonics1" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_ConsonantDigraphs_BeginningPhonics" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Blending_3snd_Words_Blending_2snd_Words" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Blending_4snd_Words_Blending_3snd_Words" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Blending_5snd_Words_Blending_4snd_Words" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Blending_Summation_Blending_5snd_Words" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_VowelDigraphs_ConsonantDigraphs" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_List_ReadingSources" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Text_ReadingSources" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Segment_2snd_NonWords_Segment_5snd_Words" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Segment_3snd_NonWords_Segment_2snd_NonWords" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Segment_3snd_Words_Segment_2snd_Words" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Segment_4snd_NonWords_Segment_3snd_NonWords" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Segment_4snd_Words_Segment_3snd_Words" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Segmenting_Summation_Segment_4snd_NonWords" />
+        <AssociationConnector Association="FamilyLiteracy.mdfModel.FK_Segment_5snd_Words_Segment_4snd_Words" />
+        <EntityTypeShape EntityType="FamilyLiteracy.mdfModel.ReportSelectionMenu" Width="1.5" PointX="0.75" PointY="22.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
